@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DBMS Chapter 4 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>🗄️ DBMS Chapter 4</h1>
+
+<h2>ER Diagrams</h2>
+
+<p>
+Learn Entities, Attributes, Relationships and Cardinality with easy examples.
+</p>
+</div>
+
+</section>
+
+<section class="notes-content">
+
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+ER Diagram stands for Entity Relationship Diagram. It is used to visually design the structure of a database before creating it.
+
+</p>
+
+</div>
+
+
+<h2>📖 What is an ER Diagram?</h2>
+
+<p>
+
+An Entity Relationship (ER) Diagram is a graphical representation of a database. It shows entities, attributes and relationships between different data objects.
+
+</p>
+
+
+<h2>⭐ Why do we use ER Diagrams?</h2>
+
+<ul>
+
+<li>Design databases easily</li>
+
+<li>Show relationships clearly</li>
+
+<li>Reduce database errors</li>
+
+<li>Improve database planning</li>
+
+<li>Simplify communication</li>
+
+</ul>
+
+
+<h2>📚 Components of ER Diagram</h2>
+
+<table>
+
+<tr>
+
+<th>Component</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Entity</td>
+
+<td>Represents an object.</td>
+
+</tr>
+
+<tr>
+
+<td>Attribute</td>
+
+<td>Represents properties of an entity.</td>
+
+</tr>
+
+<tr>
+
+<td>Relationship</td>
+
+<td>Connects two or more entities.</td>
+
+</tr>
+
+<tr>
+
+<td>Cardinality</td>
+
+<td>Shows the number of relationships.</td>
+
+</tr>
+
+</table>
+
+
+<h2>🏢 Entity</h2>
+
+<p>
+
+An Entity is a real-world object about which data is stored.
+
+</p>
+
+<pre>
+
+Student
+
+Teacher
+
+Course
+
+Book
+
+</pre>
+
+
+<h2>🏷 Attribute</h2>
+
+<p>
+
+Attributes describe the characteristics of an entity.
+
+</p>
+
+<pre>
+
+Student
+
+↓
+
+ID
+
+Name
+
+Department
+
+CGPA
+
+</pre>
+
+
+<h2>🔗 Relationship</h2>
+
+<p>
+
+A Relationship connects entities together.
+
+</p>
+
+<pre>
+
+Student
+
+↓
+
+Enrolls
+
+↓
+
+Course
+
+</pre>
+
+
+<h2>📊 Cardinality</h2>
+
+<p>
+
+Cardinality specifies how many entities participate in a relationship.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Type</th>
+
+<th>Meaning</th>
+
+</tr>
+
+<tr>
+
+<td>1 : 1</td>
+
+<td>One to One</td>
+
+</tr>
+
+<tr>
+
+<td>1 : M</td>
+
+<td>One to Many</td>
+
+</tr>
+
+<tr>
+
+<td>M : N</td>
+
+<td>Many to Many</td>
+
+</tr>
+
+</table>
+
+
+<h2>💻 Simple ER Diagram</h2>
+
+<pre>
+
+Student
+
+↓
+
+Enrolls
+
+↓
+
+Course
+
+</pre>
+
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>Easy database design</li>
+
+<li>Clear visualization</li>
+
+<li>Better planning</li>
+
+<li>Reduces mistakes</li>
+
+<li>Easy communication</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Confusing entity and attribute</li>
+
+<li>Wrong cardinality</li>
+
+<li>Missing relationships</li>
+
+<li>Using duplicate entities</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What is an ER Diagram?
+
+<br>
+
+An ER Diagram is a graphical representation of a database.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+What is an Entity?
+
+<br>
+
+An Entity is a real-world object stored in a database.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+What is an Attribute?
+
+<br>
+
+An Attribute describes an entity.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+What is Cardinality?
+
+<br>
+
+Cardinality defines the number of relationships between entities.
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>Entity</strong>
+
+Object
+
+</div>
+
+<div class="revision-item">
+
+<strong>Attribute</strong>
+
+Property
+
+</div>
+
+<div class="revision-item">
+
+<strong>Relationship</strong>
+
+Connection
+
+</div>
+
+<div class="revision-item">
+
+<strong>Cardinality</strong>
+
+1:1, 1:M, M:N
+
+
+</div>
+
+</div>
+
+
+
+</section>
+
+
+<section class="download-section">
+
+<h2>📥 Download Database Notes</h2>
+
+<p>
+Download complete Database notes PDF and revise concepts anytime.
+</p>
+
+<a href="pdf/database chapter 4.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+<section class="back-home">
+
+<a href="database.html">
+⬅ Back to Database Notes
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

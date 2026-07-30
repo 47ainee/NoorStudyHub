@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript Chapter 6 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="web-development.html">🌐 Web Development</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>⚡ JavaScript Chapter 6</h1>
+
+<h2>JavaScript Events</h2>
+
+<p>
+Learn JavaScript Events, Event Listeners and User Interactions with practical examples.
+</p>
+</div>
+
+</section>
+<section class="notes-content">
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+Almost every interactive website uses JavaScript Events to respond to user actions.
+
+</p>
+
+</div>
+
+
+<h2>📖 What are JavaScript Events?</h2>
+
+<p>
+
+JavaScript Events are actions performed by users or browsers.
+
+Events allow websites to respond when users click, type, scroll or move the mouse.
+
+</p>
+
+
+<h2>⭐ Why do we use Events?</h2>
+
+<ul>
+
+<li>Make websites interactive</li>
+
+<li>Respond to user actions</li>
+
+<li>Handle forms</li>
+
+<li>Create dynamic webpages</li>
+
+<li>Improve user experience</li>
+
+</ul>
+
+
+<h2>🎯 Common JavaScript Events</h2>
+
+<table>
+
+<tr>
+
+<th>Event</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>click</td>
+
+<td>Occurs when user clicks</td>
+
+</tr>
+
+<tr>
+
+<td>dblclick</td>
+
+<td>Double click event</td>
+
+</tr>
+
+<tr>
+
+<td>mouseover</td>
+
+<td>Mouse moves over element</td>
+
+</tr>
+
+<tr>
+
+<td>mouseout</td>
+
+<td>Mouse leaves element</td>
+
+</tr>
+
+<tr>
+
+<td>keydown</td>
+
+<td>Key is pressed</td>
+
+</tr>
+
+<tr>
+
+<td>keyup</td>
+
+<td>Key is released</td>
+
+</tr>
+
+<tr>
+
+<td>submit</td>
+
+<td>Form submission</td>
+
+</tr>
+
+<tr>
+
+<td>change</td>
+
+<td>Input value changes</td>
+
+</tr>
+
+</table>
+
+
+<h2>💻 Click Event Example</h2>
+
+<pre>
+
+<button onclick="hello()">
+
+Click Me
+
+</button>
+
+
+<script>
+
+function hello(){
+
+alert("Hello Noor");
+
+}
+
+</script>
+
+</pre>
+
+
+<h2>🎯 Event Listener</h2>
+
+<p>
+
+Event Listeners are the modern way to handle events.
+
+</p>
+
+
+<pre>
+
+document.getElementById("btn")
+
+.addEventListener("click",function(){
+
+alert("Button Clicked");
+
+});
+
+</pre>
+
+
+<h2>⌨ Keyboard Event</h2>
+
+<pre>
+
+document.addEventListener("keydown",function(){
+
+console.log("Key Pressed");
+
+});
+
+</pre>
+
+
+<h2>🖱 Mouse Event</h2>
+
+<pre>
+
+document.getElementById("box")
+
+.onmouseover=function(){
+
+console.log("Mouse Enter");
+
+}
+
+</pre>
+
+
+<h2>📋 Form Event</h2>
+
+<pre>
+
+document.querySelector("form")
+
+.addEventListener("submit",function(){
+
+alert("Form Submitted");
+
+});
+
+</pre>
+
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>Interactive webpages</li>
+
+<li>Better user experience</li>
+
+<li>Dynamic content</li>
+
+<li>Real-time responses</li>
+
+<li>Modern web applications</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Wrong event name</li>
+
+<li>Missing function brackets</li>
+
+<li>Selecting wrong element</li>
+
+<li>Writing JavaScript before HTML loads</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What is a JavaScript Event?
+
+<br>
+
+An action performed by the user or browser.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+Which event occurs when a button is clicked?
+
+<br>
+
+click
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+Which method is preferred for handling events?
+
+<br>
+
+addEventListener()
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+Name two keyboard events.
+
+<br>
+
+keydown and keyup
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>Click</strong>
+
+onclick
+
+</div>
+
+<div class="revision-item">
+
+<strong>Keyboard</strong>
+
+keydown
+
+</div>
+
+<div class="revision-item">
+
+<strong>Mouse</strong>
+
+mouseover
+
+</div>
+
+<div class="revision-item">
+
+<strong>Modern Method</strong>
+
+addEventListener()
+
+</div>
+
+</div>
+</section>
+<section class="download-section">
+
+Download JavaScript Chapter 6 PDF for offline study.
+
+<p>
+Download complete notes PDF and revise JavaScript concepts anytime.
+</p>
+
+<a href="pdf/javascript chapter 6.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+
+<section class="back-home">
+
+<a href="javascript-notes.html">
+⬅ Back to JavaScript Notes
+</a>
+
+</section>
+<footer>
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

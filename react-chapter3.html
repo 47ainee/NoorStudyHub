@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Chapter 3 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="web-development.html">🌐 Web Development</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>⚛️ React Chapter 3</h1>
+
+<h2>Components</h2>
+
+<p>
+Learn React Components, their types and how reusable UI is created using components.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="notes-content">
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+Components are the building blocks of every React application. A complete webpage is made by combining multiple components.
+
+</p>
+
+</div>
+
+
+<h2>📖 What are React Components?</h2>
+
+<p>
+
+A Component is a reusable piece of code that returns part of the user interface (UI). Instead of writing the same HTML again and again, developers create components and reuse them.
+
+</p>
+
+
+<h2>⭐ Why do we use Components?</h2>
+
+<ul>
+
+<li>Reuse code</li>
+
+<li>Reduce repetition</li>
+
+<li>Easy maintenance</li>
+
+<li>Organized project structure</li>
+
+<li>Faster development</li>
+
+</ul>
+
+
+<h2>📚 Types of Components</h2>
+
+<table>
+
+<tr>
+
+<th>Type</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>Functional Component</td>
+
+<td>Simple JavaScript function</td>
+
+</tr>
+
+<tr>
+
+<td>Class Component</td>
+
+<td>Uses ES6 classes (older method)</td>
+
+</tr>
+
+</table>
+
+
+<h2>💻 Functional Component Example</h2>
+
+<pre>
+
+function Welcome(){
+
+return <h1>Hello Noor</h1>;
+
+}
+
+</pre>
+
+
+<h2>💻 Using a Component</h2>
+
+<pre>
+
+function App(){
+
+return <Welcome/>;
+
+}
+
+</pre>
+
+
+<h2>📦 Component Structure</h2>
+
+<p>
+
+Each component should have a single responsibility and return one parent element.
+
+</p>
+
+
+<pre>
+
+function Header(){
+
+return(
+
+<header>
+
+<h1>Noor Study Hub</h1>
+
+</header>
+
+);
+
+}
+
+</pre>
+
+
+<h2>⭐ Advantages of Components</h2>
+
+<ul>
+
+<li>Reusable code</li>
+
+<li>Cleaner projects</li>
+
+<li>Easy debugging</li>
+
+<li>Easy updates</li>
+
+<li>Professional structure</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Writing multiple parent elements</li>
+
+<li>Component name starting with lowercase letter</li>
+
+<li>Not returning JSX</li>
+
+<li>Using components without importing them</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What is a React Component?
+
+<br>
+
+A reusable block of UI.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+What are the two types of Components?
+
+<br>
+
+Functional and Class Components.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+Which component type is mostly used today?
+
+<br>
+
+Functional Components.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+Why are Components important?
+
+<br>
+
+They make code reusable and organized.
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>Component</strong>
+
+Reusable UI Block
+
+</div>
+
+<div class="revision-item">
+
+<strong>Main Type</strong>
+
+Functional Component
+
+</div>
+
+<div class="revision-item">
+
+<strong>Old Type</strong>
+
+Class Component
+
+</div>
+
+<div class="revision-item">
+
+<strong>Benefit</strong>
+
+Reusable Code
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="download-section">
+
+<h2>📥 Download React Notes</h2>
+
+<p>
+Download complete React notes PDF and revise concepts anytime.
+</p>
+
+<a href="pdf/react chapter3.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+</section>
+
+
+<section class="back-home">
+
+<a href="react-notes.html">
+⬅ Back to React Notes
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

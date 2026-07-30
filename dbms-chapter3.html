@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DBMS Chapter 3 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>🗄️ DBMS Chapter 3</h1>
+
+<h2>Normalization</h2>
+
+<p>
+Learn 1NF, 2NF, 3NF and BCNF with simple explanations and examples.
+</p>
+</div>
+
+</section>
+
+
+<section class="notes-content">
+
+
+
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+Normalization helps organize data efficiently by reducing duplication and improving data consistency.
+
+</p>
+
+</div>
+
+
+<h2>📖 What is Normalization?</h2>
+
+<p>
+
+Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It divides large tables into smaller related tables.
+
+</p>
+
+
+<h2>⭐ Why do we use Normalization?</h2>
+
+<ul>
+
+<li>Reduce data redundancy</li>
+
+<li>Improve consistency</li>
+
+<li>Avoid update anomalies</li>
+
+<li>Save storage space</li>
+
+<li>Make databases easier to maintain</li>
+
+</ul>
+
+
+<h2>📚 Normal Forms</h2>
+
+<table>
+
+<tr>
+
+<th>Normal Form</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>1NF</td>
+
+<td>Remove repeating groups and store atomic values.</td>
+
+</tr>
+
+<tr>
+
+<td>2NF</td>
+
+<td>Remove partial dependency.</td>
+
+</tr>
+
+<tr>
+
+<td>3NF</td>
+
+<td>Remove transitive dependency.</td>
+
+</tr>
+
+<tr>
+
+<td>BCNF</td>
+
+<td>Every determinant must be a candidate key.</td>
+
+</tr>
+
+</table>
+
+
+<h2>1️⃣ First Normal Form (1NF)</h2>
+
+<p>
+
+A table is in First Normal Form when every column contains only atomic (single) values and there are no repeating groups.
+
+</p>
+
+
+<pre>
+
+StudentID
+
+Name
+
+Subject
+
+</pre>
+
+
+<h2>2️⃣ Second Normal Form (2NF)</h2>
+
+<p>
+
+A table is in Second Normal Form when it is already in 1NF and all non-key attributes depend on the whole primary key.
+
+</p>
+
+
+<h2>3️⃣ Third Normal Form (3NF)</h2>
+
+<p>
+
+A table is in Third Normal Form when it is already in 2NF and has no transitive dependency.
+
+</p>
+
+
+<h2>4️⃣ Boyce-Codd Normal Form (BCNF)</h2>
+
+<p>
+
+BCNF is a stronger version of 3NF. Every determinant in the table must be a candidate key.
+
+</p>
+
+
+<h2>💻 Example</h2>
+
+<pre>
+
+Student(ID, Name, Department)
+
+Department(DepartmentID, DepartmentName)
+
+</pre>
+
+
+<h2>⭐ Advantages of Normalization</h2>
+
+<ul>
+
+<li>Less duplicate data</li>
+
+<li>Better consistency</li>
+
+<li>Easy updates</li>
+
+<li>Improved database performance</li>
+
+<li>Efficient storage</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Confusing 2NF and 3NF</li>
+
+<li>Ignoring functional dependency</li>
+
+<li>Creating unnecessary tables</li>
+
+<li>Using repeated values</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What is Normalization?
+
+<br>
+
+Normalization is the process of organizing database tables to reduce redundancy.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+What is 1NF?
+
+<br>
+
+It removes repeating groups and stores atomic values.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+What is 3NF?
+
+<br>
+
+It removes transitive dependency.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+Why is Normalization important?
+
+<br>
+
+It improves consistency and reduces duplicate data.
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>1NF</strong>
+
+Atomic Values
+
+</div>
+
+<div class="revision-item">
+
+<strong>2NF</strong>
+
+No Partial Dependency
+
+</div>
+
+<div class="revision-item">
+
+<strong>3NF</strong>
+
+No Transitive Dependency
+
+</div>
+
+<div class="revision-item">
+
+<strong>BCNF</strong>
+
+Candidate Key Rule
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="download-section">
+
+<h2>📥 Download Database Notes</h2>
+
+<p>
+Download complete Database notes PDF and revise concepts anytime.
+</p>
+
+<a href="pdf/database chapter 3.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+<section class="back-home">
+
+<a href="database.html">
+⬅ Back to Database Notes
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

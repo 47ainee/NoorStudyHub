@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Chapter 6 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="web-development.html">🌐 Web Development</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>⚛️ React Chapter 6</h1>
+
+<h2>React Router</h2>
+
+<p>
+Learn React Router, navigation between pages and route management with simple examples.
+</p>
+</div>
+
+</section>
+
+
+<section class="notes-content">
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+React Router allows users to move between different pages without reloading the entire website.
+
+</p>
+
+</div>
+
+
+<h2>📖 What is React Router?</h2>
+
+<p>
+
+React Router is a library used for navigation in React applications. It helps developers create multiple pages and switch between them without refreshing the browser.
+
+</p>
+
+
+<h2>⭐ Why do we use React Router?</h2>
+
+<ul>
+
+<li>Create multiple pages</li>
+
+<li>Fast page navigation</li>
+
+<li>No full page reload</li>
+
+<li>Better user experience</li>
+
+<li>Professional web applications</li>
+
+</ul>
+
+
+<h2>📚 Important Components</h2>
+
+<table>
+
+<tr>
+
+<th>Component</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>BrowserRouter</td>
+
+<td>Wraps the application</td>
+
+</tr>
+
+<tr>
+
+<td>Routes</td>
+
+<td>Contains all routes</td>
+
+</tr>
+
+<tr>
+
+<td>Route</td>
+
+<td>Defines a page</td>
+
+</tr>
+
+<tr>
+
+<td>Link</td>
+
+<td>Navigates between pages</td>
+
+</tr>
+
+</table>
+
+
+<h2>💻 Basic Example</h2>
+
+<pre>
+
+import {
+
+BrowserRouter,
+
+Routes,
+
+Route
+
+} from "react-router-dom";
+
+</pre>
+
+
+<h2>💻 Route Example</h2>
+
+<pre>
+
+<Routes>
+
+<Route path="/" element={<Home/>}/>
+
+<Route path="/about" element={<About/>}/>
+
+</Routes>
+
+</pre>
+
+
+<h2>💻 Link Example</h2>
+
+<pre>
+
+<Link to="/about">
+
+About
+
+</Link>
+
+</pre>
+
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>Fast navigation</li>
+
+<li>No page refresh</li>
+
+<li>Easy routing</li>
+
+<li>Improves user experience</li>
+
+<li>Professional applications</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Forgetting BrowserRouter</li>
+
+<li>Wrong route path</li>
+
+<li>Missing Link import</li>
+
+<li>Typing incorrect URL</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What is React Router?
+
+<br>
+
+A library used for navigation in React applications.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+Which component wraps the application?
+
+<br>
+
+BrowserRouter
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+Which component creates navigation links?
+
+<br>
+
+Link
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+Why is React Router used?
+
+<br>
+
+To navigate between pages without reloading.
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>Main Library</strong>
+
+React Router
+
+</div>
+
+<div class="revision-item">
+
+<strong>Main Component</strong>
+
+BrowserRouter
+
+</div>
+
+<div class="revision-item">
+
+<strong>Navigation</strong>
+
+Link
+
+</div>
+
+<div class="revision-item">
+
+<strong>Routing</strong>
+
+Route
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="download-section">
+
+<h2>📥 Download React Notes</h2>
+
+<p>
+Download complete React notes PDF and revise concepts anytime.
+</p>
+
+<a href="pdf/react chapter6.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+
+<section class="back-home">
+
+<a href="react-notes.html">
+⬅ Back to React Notes
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

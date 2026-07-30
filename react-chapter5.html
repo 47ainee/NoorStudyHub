@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Chapter 5 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="web-development.html">🌐 Web Development</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>⚛️ React Chapter 5</h1>
+
+<h2>Hooks</h2>
+
+<p>
+Learn React Hooks, especially useState and useEffect, with simple explanations and examples.
+</p>
+</div>
+
+</section>
+
+
+<section class="notes-content">
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+Hooks were introduced in React 16.8. They allow functional components to use state and other React features without writing class components.
+
+</p>
+
+</div>
+
+
+<h2>📖 What are Hooks?</h2>
+
+<p>
+
+Hooks are special React functions that let developers use features like State and Lifecycle inside functional components.
+
+</p>
+
+
+<h2>⭐ Why do we use Hooks?</h2>
+
+<ul>
+
+<li>Use State in functional components</li>
+
+<li>Write cleaner code</li>
+
+<li>Avoid class components</li>
+
+<li>Reuse logic easily</li>
+
+<li>Improve code readability</li>
+
+</ul>
+
+
+<h2>📚 Common React Hooks</h2>
+
+<table>
+
+<tr>
+
+<th>Hook</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>useState()</td>
+
+<td>Stores changing data</td>
+
+</tr>
+
+<tr>
+
+<td>useEffect()</td>
+
+<td>Performs side effects</td>
+
+</tr>
+
+<tr>
+
+<td>useContext()</td>
+
+<td>Access shared data</td>
+
+</tr>
+
+<tr>
+
+<td>useRef()</td>
+
+<td>Access DOM elements</td>
+
+</tr>
+
+</table>
+
+
+<h2>💻 useState Example</h2>
+
+<pre>
+
+import { useState } from "react";
+
+function Counter(){
+
+const [count,setCount] = useState(0);
+
+}
+
+</pre>
+
+
+<h2>💻 useEffect Example</h2>
+
+<pre>
+
+import { useEffect } from "react";
+
+useEffect(()=>{
+
+console.log("Component Loaded");
+
+},[]);
+
+</pre>
+
+
+<h2>🎯 Rules of Hooks</h2>
+
+<ul>
+
+<li>Call Hooks at the top level</li>
+
+<li>Do not call Hooks inside loops</li>
+
+<li>Use Hooks only inside React functions</li>
+
+<li>Always import Hooks before using them</li>
+
+</ul>
+
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>Cleaner code</li>
+
+<li>Easy state management</li>
+
+<li>Reusable logic</li>
+
+<li>Better performance</li>
+
+<li>Simpler React applications</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Calling Hooks inside conditions</li>
+
+<li>Forgetting to import Hooks</li>
+
+<li>Using Hooks outside components</li>
+
+<li>Updating State incorrectly</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What are Hooks?
+
+<br>
+
+Hooks are special React functions used in functional components.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+Which Hook is used for State?
+
+<br>
+
+useState()
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+Which Hook is used for side effects?
+
+<br>
+
+useEffect()
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+When were Hooks introduced?
+
+<br>
+
+React 16.8
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>Hooks</strong>
+
+Special React Functions
+
+</div>
+
+<div class="revision-item">
+
+<strong>State Hook</strong>
+
+useState()
+
+</div>
+
+<div class="revision-item">
+
+<strong>Effect Hook</strong>
+
+useEffect()
+
+</div>
+
+<div class="revision-item">
+
+<strong>Released</strong>
+
+React 16.8
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="download-section">
+
+<h2>📥 Download React Notes</h2>
+
+<p>
+Download complete React notes PDF and revise concepts anytime.
+</p>
+
+<a href="pdf/react chapter5.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+
+<section class="back-home">
+
+<a href="react-notes.html">
+⬅ Back to React Notes
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Chapter 9 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="web-development.html">🌐 Web Development</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>🎨 CSS Chapter 9</h1>
+
+<h2>Animations & Transitions</h2>
+
+<p>
+Learn CSS animations, transitions and transform effects with examples.
+</p>
+
+</div>
+
+</section>
+<section class="notes-content">
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+CSS Animations and Transitions make websites more interactive without using JavaScript.
+</p>
+
+</div>
+
+
+<h2>📖 What are CSS Animations & Transitions?</h2>
+
+<p>
+
+CSS Transitions create smooth changes between two states of an element.
+
+CSS Animations create moving effects by changing CSS properties over time.
+
+They improve the appearance and user experience of a website.
+
+</p>
+
+
+<h2>🎯 Why do we use Animations?</h2>
+
+<ul>
+
+<li>Create attractive websites</li>
+
+<li>Improve user experience</li>
+
+<li>Highlight important elements</li>
+
+<li>Provide smooth visual effects</li>
+
+<li>Increase user engagement</li>
+
+</ul>
+
+
+<h2>⭐ Transition Properties</h2>
+
+<table>
+
+<tr>
+
+<th>Property</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>transition-property</td>
+
+<td>Selects property to animate</td>
+
+</tr>
+
+<tr>
+
+<td>transition-duration</td>
+
+<td>Animation time</td>
+
+</tr>
+
+<tr>
+
+<td>transition-delay</td>
+
+<td>Starts animation after delay</td>
+
+</tr>
+
+<tr>
+
+<td>transition-timing-function</td>
+
+<td>Controls animation speed</td>
+
+</tr>
+
+</table>
+
+
+<h2>⭐ Animation Properties</h2>
+
+<table>
+
+<tr>
+
+<th>Property</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>animation-name</td>
+
+<td>Name of animation</td>
+
+</tr>
+
+<tr>
+
+<td>animation-duration</td>
+
+<td>Animation time</td>
+
+</tr>
+
+<tr>
+
+<td>animation-delay</td>
+
+<td>Delay before animation starts</td>
+
+</tr>
+
+<tr>
+
+<td>animation-iteration-count</td>
+
+<td>Number of repetitions</td>
+
+</tr>
+
+<tr>
+
+<td>animation-direction</td>
+
+<td>Animation direction</td>
+
+</tr>
+
+</table>
+
+
+<h2>💻 Transition Example</h2>
+
+<pre>
+
+button{
+
+background:blue;
+
+transition:0.5s;
+
+}
+
+button:hover{
+
+background:red;
+
+}
+
+</pre>
+
+
+<h2>💻 Animation Example</h2>
+
+<pre>
+
+@keyframes move{
+
+from{
+
+left:0;
+
+}
+
+to{
+
+left:200px;
+
+}
+
+}
+
+.box{
+
+animation:move 2s infinite;
+
+}
+
+</pre>
+
+
+<h2>🎯 Advantages</h2>
+
+<ul>
+
+<li>Professional design</li>
+
+<li>Smooth effects</li>
+
+<li>Better user experience</li>
+
+<li>Interactive webpages</li>
+
+<li>No JavaScript required for simple effects</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Using too many animations</li>
+
+<li>Very long animation duration</li>
+
+<li>Forgetting @keyframes</li>
+
+<li>Overusing animation effects</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong> What is a CSS Transition?
+
+<br>
+
+A Transition creates smooth changes between two states.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong> Which rule defines animations?
+
+<br>
+
+@keyframes
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong> Which property sets animation time?
+
+<br>
+
+animation-duration
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong> Which property controls smooth effects?
+
+<br>
+
+transition
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>Smooth Effect:</strong>
+
+transition
+
+</div>
+
+<div class="revision-item">
+
+<strong>Animation Rule:</strong>
+
+@keyframes
+
+</div>
+
+<div class="revision-item">
+
+<strong>Animation Time:</strong>
+
+animation-duration
+
+</div>
+
+<div class="revision-item">
+
+<strong>Main Purpose:</strong>
+
+Interactive Webpages
+
+</div>
+
+
+
+</section>
+<section class="download-section">
+
+Download CSS Chapter 9 PDF for offline study.
+
+<p>
+Download complete CSS notes PDF and revise CSS concepts anytime.
+</p>
+
+<a href="pdf/css chapter9.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+
+<section class="back-home">
+
+<a href="css-notes.html">
+⬅ Back to CSS Notes
+</a>
+</section>
+<footer>
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

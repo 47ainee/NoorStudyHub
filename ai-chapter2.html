@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chapter 2 | Noor Study Hub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>🤖 AI Chapter 2</h1>
+
+<h2>Search Algorithms</h2>
+
+<p>
+Learn BFS, DFS, Uniform Cost Search, Greedy Search and A* Search with simple explanations and examples.
+</p>
+</div>
+
+</section>
+
+
+<section class="notes-content">
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+Search algorithms help AI systems find the best solution or shortest path from one state to another.
+
+</p>
+
+</div>
+
+
+<h2>📖 What are Search Algorithms?</h2>
+
+<p>
+
+Search Algorithms are techniques used in Artificial Intelligence to find a solution to a problem by exploring different possible paths. They are widely used in games, robotics, navigation systems and intelligent software.
+
+</p>
+
+
+<h2>⭐ Why do we use Search Algorithms?</h2>
+
+<ul>
+
+<li>Find shortest path</li>
+
+<li>Solve complex problems</li>
+
+<li>Support decision making</li>
+
+<li>Optimize solutions</li>
+
+<li>Improve AI performance</li>
+
+</ul>
+
+
+<h2>📚 Types of Search Algorithms</h2>
+
+<table>
+
+<tr>
+
+<th>Algorithm</th>
+
+<th>Description</th>
+
+</tr>
+
+<tr>
+
+<td>BFS</td>
+
+<td>Explores nodes level by level.</td>
+
+</tr>
+
+<tr>
+
+<td>DFS</td>
+
+<td>Explores one branch deeply before backtracking.</td>
+
+</tr>
+
+<tr>
+
+<td>Uniform Cost Search</td>
+
+<td>Selects the path with the lowest cost.</td>
+
+</tr>
+
+<tr>
+
+<td>Greedy Search</td>
+
+<td>Chooses the path that seems best at the moment.</td>
+
+</tr>
+
+<tr>
+
+<td>A* Search</td>
+
+<td>Uses path cost and heuristic to find the best solution.</td>
+
+</tr>
+
+</table>
+
+
+<h2>🌳 Breadth First Search (BFS)</h2>
+
+<p>
+
+BFS visits all neighboring nodes first before moving to the next level. It guarantees the shortest path in an unweighted graph.
+
+</p>
+
+
+<h2>🌲 Depth First Search (DFS)</h2>
+
+<p>
+
+DFS explores one path completely before returning and exploring another path.
+
+</p>
+
+
+<h2>💰 Uniform Cost Search (UCS)</h2>
+
+<p>
+
+Uniform Cost Search always expands the node with the smallest path cost. It guarantees the optimal solution.
+
+</p>
+
+
+<h2>🎯 Greedy Search</h2>
+
+<p>
+
+Greedy Search selects the node that appears closest to the goal using a heuristic function. It is fast but does not always find the optimal solution.
+
+</p>
+
+
+<h2>⭐ A* Search</h2>
+
+<p>
+
+A* Search combines path cost and heuristic value to find the shortest and most efficient path.
+
+</p>
+
+
+<h2>💻 Example</h2>
+
+<pre>
+
+Start
+
+↓
+
+A
+
+↓
+
+B
+
+↓
+
+Goal
+
+</pre>
+
+
+<h2>📊 Comparison of Algorithms</h2>
+
+<table>
+
+<tr>
+
+<th>Algorithm</th>
+
+<th>Optimal</th>
+
+<th>Complete</th>
+
+</tr>
+
+<tr>
+
+<td>BFS</td>
+
+<td>Yes</td>
+
+<td>Yes</td>
+
+</tr>
+
+<tr>
+
+<td>DFS</td>
+
+<td>No</td>
+
+<td>No</td>
+
+</tr>
+
+<tr>
+
+<td>Uniform Cost Search</td>
+
+<td>Yes</td>
+
+<td>Yes</td>
+
+</tr>
+
+<tr>
+
+<td>Greedy Search</td>
+
+<td>No</td>
+
+<td>No</td>
+
+</tr>
+
+<tr>
+
+<td>A*</td>
+
+<td>Yes</td>
+
+<td>Yes</td>
+
+</tr>
+
+</table>
+
+
+<h2>⭐ Applications</h2>
+
+<ul>
+
+<li>Google Maps Navigation</li>
+
+<li>Game Playing</li>
+
+<li>Robotics</li>
+
+<li>Path Finding</li>
+
+<li>Network Routing</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Confusing BFS with DFS</li>
+
+<li>Thinking Greedy Search is always optimal</li>
+
+<li>Ignoring path cost in UCS</li>
+
+<li>Using the wrong heuristic in A*</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What is BFS?
+
+<br>
+
+Breadth First Search explores nodes level by level.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+Which algorithm explores depth first?
+
+<br>
+
+DFS.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+Which search algorithm guarantees the lowest path cost?
+
+<br>
+
+Uniform Cost Search.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+Which algorithm uses both cost and heuristic?
+
+<br>
+
+A* Search.
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>BFS</strong>
+
+Level by Level
+
+</div>
+
+<div class="revision-item">
+
+<strong>DFS</strong>
+
+Depth First
+
+</div>
+
+<div class="revision-item">
+
+<strong>UCS</strong>
+
+Lowest Cost
+
+</div>
+
+<div class="revision-item">
+
+<strong>Greedy</strong>
+
+Best Immediate Choice
+
+</div>
+
+<div class="revision-item">
+
+<strong>A*</strong>
+
+Cost + Heuristic
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="download-section">
+
+<h2>📥 Download AI Notes</h2>
+
+<p>
+Download complete Artificial Intelligence notes PDF and revise concepts anytime.
+</p>
+
+<a href="pdf/ai chapter2.pdf.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+<section class="back-home">
+
+<a href="artificial-intelligence.html">
+⬅ Back to Artificial Intelligence
+</a>
+
+</section>
+<footer>
+
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

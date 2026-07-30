@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript Chapter 5 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="web-development.html">🌐 Web Development</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>⚡ JavaScript Chapter 5</h1>
+
+<h2>DOM Manipulation</h2>
+
+<p>
+Learn how JavaScript interacts with HTML elements using DOM methods and examples.
+</p>
+</div>
+
+</section>
+<section class="notes-content">
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+DOM stands for Document Object Model.
+It allows JavaScript to access and change HTML elements dynamically.
+</p>
+
+</div>
+
+
+<h2>📖 What is DOM?</h2>
+
+<p>
+DOM (Document Object Model) is a programming interface that represents an HTML document as a tree structure.
+JavaScript uses DOM to interact with webpage elements.
+</p>
+
+
+<h2>⭐ Why do we use DOM?</h2>
+
+<ul>
+
+<li>Change HTML content</li>
+
+<li>Change CSS styles</li>
+
+<li>Add or remove elements</li>
+
+<li>Create interactive webpages</li>
+
+<li>Handle user actions</li>
+
+</ul>
+
+
+<h2>🌳 DOM Tree Structure</h2>
+
+<p>
+HTML elements are organized in a tree-like structure where each element is called a node.
+</p>
+
+
+<pre>
+
+Document
+
+ └── HTML
+
+      ├── Head
+
+      └── Body
+
+           ├── Heading
+
+           └── Paragraph
+
+</pre>
+
+
+<h2>📝 Selecting HTML Elements</h2>
+
+<p>
+JavaScript provides different methods to select elements from HTML.
+</p>
+
+
+<h2>🎯 getElementById()</h2>
+
+<p>
+Selects an element using its ID.
+</p>
+
+
+<pre>
+
+document.getElementById("title");
+
+</pre>
+
+
+<h2>🎯 querySelector()</h2>
+
+<p>
+Selects the first matching HTML element.
+</p>
+
+
+<pre>
+
+document.querySelector(".box");
+
+</pre>
+
+
+<h2>🎯 querySelectorAll()</h2>
+
+<p>
+Selects all matching elements.
+</p>
+
+
+<pre>
+
+document.querySelectorAll("p");
+
+</pre>
+
+
+<h2>✏ Changing HTML Content</h2>
+
+<p>
+JavaScript can change the content of HTML elements using innerHTML.
+</p>
+
+
+<pre>
+
+document.getElementById("heading").innerHTML="Hello";
+
+</pre>
+
+
+<h2>🎨 Changing CSS Style</h2>
+
+<p>
+JavaScript can also change CSS styles dynamically.
+</p>
+
+
+<pre>
+
+document.getElementById("box").style.color="red";
+
+</pre>
+
+
+<h2>➕ Creating New Elements</h2>
+
+<p>
+JavaScript can create new HTML elements using createElement().
+</p>
+
+
+<pre>
+
+let heading = document.createElement("h1");
+
+</pre>
+
+
+<h2>🗑 Removing Elements</h2>
+
+<p>
+Elements can be removed from a webpage using remove().
+</p>
+
+
+<pre>
+
+element.remove();
+
+</pre>
+
+
+<h2>💻 Complete Example</h2>
+
+<pre>
+
+<button id="btn">
+Click Me
+</button>
+
+
+<script>
+
+document.getElementById("btn").onclick=function(){
+
+alert("Button Clicked");
+
+}
+
+</script>
+
+</pre>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Using wrong element ID</li>
+
+<li>Running JavaScript before HTML loads</li>
+
+<li>Missing brackets</li>
+
+<li>Selecting elements that do not exist</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong> What is DOM?
+
+<br>
+
+DOM is a way for JavaScript to interact with HTML documents.
+
+</p>
+
+
+<hr>
+
+
+<p>
+
+<strong>Q2:</strong> Which method selects an element by ID?
+
+<br>
+
+getElementById()
+
+</p>
+
+
+<hr>
+
+
+<p>
+
+<strong>Q3:</strong> What does innerHTML do?
+
+<br>
+
+It changes the HTML content of an element.
+
+</p>
+
+
+<hr>
+
+
+<p>
+
+<strong>Q4:</strong> What is querySelector()?
+
+<br>
+
+It selects the first matching element.
+
+</p>
+
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+
+<div class="revision-item">
+
+<strong>DOM:</strong>
+
+Document Object Model
+
+</div>
+
+
+<div class="revision-item">
+
+<strong>Select:</strong>
+
+getElementById()
+
+</div>
+
+
+<div class="revision-item">
+
+<strong>Change:</strong>
+
+innerHTML
+
+</div>
+
+
+<div class="revision-item">
+
+<strong>Style:</strong>
+
+JavaScript CSS Control
+
+</div>
+
+
+</div>
+</section>
+<section class="download-section">
+
+Download JavaScript Chapter 5 PDF for offline study.
+
+<p>
+Download complete notes PDF and revise JavaScript concepts anytime.
+</p>
+
+<a href="pdf/javascript chapter 5.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+
+<section class="back-home">
+
+<a href="javascript-notes.html">
+⬅ Back to JavaScript Notes
+</a>
+
+</section>
+<footer>
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

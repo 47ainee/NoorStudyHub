@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Chapter 4 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="web-development.html">🌐 Web Development</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>⚛️ React Chapter 4</h1>
+
+<h2>Props & State</h2>
+
+<p>
+Learn React Props and State, their differences and how data is managed in React components.
+</p>
+</div>
+
+</section>
+
+
+<section class="notes-content">
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+Props are used to pass data from one component to another, while State stores data that can change inside a component.
+
+</p>
+
+</div>
+
+
+<h2>📖 What are Props?</h2>
+
+<p>
+
+Props (Properties) are used to pass data from a parent component to a child component. Props are read-only, which means they cannot be modified by the child component.
+
+</p>
+
+
+<h2>💻 Props Example</h2>
+
+<pre>
+
+function Welcome(props){
+
+return <h1>Hello {props.name}</h1>;
+
+}
+
+</pre>
+
+
+<h2>📖 What is State?</h2>
+
+<p>
+
+State is used to store data inside a component. Unlike Props, State can change during program execution.
+
+</p>
+
+
+<h2>💻 State Example</h2>
+
+<pre>
+
+const [count,setCount] = useState(0);
+
+</pre>
+
+
+<h2>⭐ Difference Between Props & State</h2>
+
+<table>
+
+<tr>
+
+<th>Props</th>
+
+<th>State</th>
+
+</tr>
+
+<tr>
+
+<td>Passed from Parent</td>
+
+<td>Managed inside Component</td>
+
+</tr>
+
+<tr>
+
+<td>Read Only</td>
+
+<td>Can Change</td>
+
+</tr>
+
+<tr>
+
+<td>Cannot Modify</td>
+
+<td>Can Update</td>
+
+</tr>
+
+<tr>
+
+<td>Used for Communication</td>
+
+<td>Used for Dynamic Data</td>
+
+</tr>
+
+</table>
+
+
+<h2>🎯 Why do we use Props?</h2>
+
+<ul>
+
+<li>Pass data</li>
+
+<li>Reuse components</li>
+
+<li>Keep code organized</li>
+
+<li>Improve communication between components</li>
+
+</ul>
+
+
+<h2>🎯 Why do we use State?</h2>
+
+<ul>
+
+<li>Store changing values</li>
+
+<li>Update UI automatically</li>
+
+<li>Handle user interaction</li>
+
+<li>Manage application data</li>
+
+</ul>
+
+
+<h2>⭐ Advantages</h2>
+
+<ul>
+
+<li>Reusable components</li>
+
+<li>Dynamic user interface</li>
+
+<li>Better data management</li>
+
+<li>Clean code structure</li>
+
+<li>Easy maintenance</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Trying to modify Props</li>
+
+<li>Using State without useState()</li>
+
+<li>Confusing Props with State</li>
+
+<li>Updating State directly</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What are Props?
+
+<br>
+
+Props are used to pass data between components.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+What is State?
+
+<br>
+
+State stores data that can change inside a component.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+Can Props be modified?
+
+<br>
+
+No.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+Can State change?
+
+<br>
+
+Yes.
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>Props</strong>
+
+Read Only
+
+</div>
+
+<div class="revision-item">
+
+<strong>State</strong>
+
+Changeable Data
+
+</div>
+
+<div class="revision-item">
+
+<strong>Props Source</strong>
+
+Parent Component
+
+</div>
+
+<div class="revision-item">
+
+<strong>State Owner</strong>
+
+Current Component
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="download-section">
+
+<h2>📥 Download React Notes</h2>
+
+<p>
+Download complete React notes PDF and revise concepts anytime.
+</p>
+
+<a href="pdf/react chapter4.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+
+<section class="back-home">
+
+<a href="react-notes.html">
+⬅ Back to React Notes
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

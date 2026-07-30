@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DBMS Chapter 2 | Noor Study Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Logo">
+</div>
+
+<ul>
+    <li><a href="index.html">🏠 Home</a></li>
+</ul>
+<button id="darkModeBtn" class="dark-btn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>🗄️ DBMS Chapter 2</h1>
+
+<h2>SQL</h2>
+
+<p>
+Learn SQL basics including SELECT, INSERT, UPDATE, DELETE, WHERE and JOIN queries with simple examples.
+</p>
+</div>
+
+</section>
+
+
+<section class="notes-content">
+
+
+<div class="info-box">
+
+<h3>💡 Did You Know?</h3>
+
+<p>
+
+SQL stands for Structured Query Language. It is the standard language used to communicate with relational databases.
+
+</p>
+
+</div>
+
+
+<h2>📖 What is SQL?</h2>
+
+<p>
+
+SQL (Structured Query Language) is a programming language used to create, retrieve, update and delete data stored in a database.
+
+</p>
+
+
+<h2>⭐ Why do we use SQL?</h2>
+
+<ul>
+
+<li>Store data</li>
+
+<li>Retrieve records</li>
+
+<li>Update information</li>
+
+<li>Delete unwanted data</li>
+
+<li>Manage databases</li>
+
+</ul>
+
+
+<h2>📚 Common SQL Commands</h2>
+
+<table>
+
+<tr>
+
+<th>Command</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>SELECT</td>
+
+<td>Retrieve data</td>
+
+</tr>
+
+<tr>
+
+<td>INSERT</td>
+
+<td>Add new records</td>
+
+</tr>
+
+<tr>
+
+<td>UPDATE</td>
+
+<td>Modify existing records</td>
+
+</tr>
+
+<tr>
+
+<td>DELETE</td>
+
+<td>Remove records</td>
+
+</tr>
+
+<tr>
+
+<td>WHERE</td>
+
+<td>Filter records</td>
+
+</tr>
+
+<tr>
+
+<td>JOIN</td>
+
+<td>Combine multiple tables</td>
+
+</tr>
+
+</table>
+
+
+<h2>💻 SELECT Example</h2>
+
+<pre>
+
+SELECT * FROM Students;
+
+</pre>
+
+
+<h2>💻 INSERT Example</h2>
+
+<pre>
+
+INSERT INTO Students
+
+VALUES(1,'Noor','BSCS');
+
+</pre>
+
+
+<h2>💻 UPDATE Example</h2>
+
+<pre>
+
+UPDATE Students
+
+SET Department='CS'
+
+WHERE ID=1;
+
+</pre>
+
+
+<h2>💻 DELETE Example</h2>
+
+<pre>
+
+DELETE FROM Students
+
+WHERE ID=1;
+
+</pre>
+
+
+<h2>💻 WHERE Example</h2>
+
+<pre>
+
+SELECT *
+
+FROM Students
+
+WHERE Department='BSCS';
+
+</pre>
+
+
+<h2>💻 JOIN Example</h2>
+
+<pre>
+
+SELECT Students.Name,
+
+Courses.CourseName
+
+FROM Students
+
+JOIN Courses
+
+ON Students.ID=Courses.StudentID;
+
+</pre>
+
+
+<h2>⭐ Advantages of SQL</h2>
+
+<ul>
+
+<li>Easy to learn</li>
+
+<li>Fast data retrieval</li>
+
+<li>Standard database language</li>
+
+<li>Supports large databases</li>
+
+<li>Secure data management</li>
+
+</ul>
+
+
+<h2>❌ Common Mistakes</h2>
+
+<ul>
+
+<li>Missing WHERE clause</li>
+
+<li>Wrong table name</li>
+
+<li>Typing incorrect SQL keywords</li>
+
+<li>Using DELETE without WHERE</li>
+
+</ul>
+
+
+<h2>🎤 Interview Questions</h2>
+
+<div class="info-box">
+
+<p>
+
+<strong>Q1:</strong>
+
+What is SQL?
+
+<br>
+
+SQL is the language used to manage relational databases.
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q2:</strong>
+
+Which command retrieves data?
+
+<br>
+
+SELECT
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q3:</strong>
+
+Which command adds new records?
+
+<br>
+
+INSERT
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Q4:</strong>
+
+Which command combines multiple tables?
+
+<br>
+
+JOIN
+
+</p>
+
+</div>
+
+
+<h2>⚡ Quick Revision</h2>
+
+<div class="revision-box">
+
+<div class="revision-item">
+
+<strong>SELECT</strong>
+
+Read Data
+
+</div>
+
+<div class="revision-item">
+
+<strong>INSERT</strong>
+
+Add Data
+
+</div>
+
+<div class="revision-item">
+
+<strong>UPDATE</strong>
+
+Modify Data
+
+</div>
+
+<div class="revision-item">
+
+<strong>DELETE</strong>
+
+Remove Data
+
+</div>
+
+<div class="revision-item">
+
+<strong>JOIN</strong>
+
+Combine Tables
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="download-section">
+
+<h2>📥 Download Database Notes</h2>
+
+<p>
+Download complete Database notes PDF and revise concepts anytime.
+</p>
+
+<a href="pdf/database chapter 2.pdf" class="download-btn" download>
+⬇ Download PDF
+</a>
+
+</section>
+
+<section class="back-home">
+
+<a href="database.html">
+⬅ Back to Database Notes
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Noor Study Hub | All Rights Reserved.</p>
+
+</footer>
+<button id="topBtn">⬆</button>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
